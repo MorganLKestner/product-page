@@ -1,6 +1,18 @@
-h1 {
-  color: red;
+@font-face { font-family: Graphik; src: url('Graphik-Medium.oft');
+  src: url('Graphik-Medium.woff'), url('Graphik-Medium.ttf');
+ } 
 
+
+h1 {
+  color: #000000;
+  font-family: "Graphik",Helvetica,Arial;
+
+}
+h2 {
+  font-family: Helvetica;
+}
+h3 {
+  font-family: Arial;
 }
 body {
   border: 1px solid pink;
