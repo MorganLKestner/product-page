@@ -1,0 +1,22 @@
+{
+  "name": "product-page",
+  "version": "1.0.0",
+  "description": "mockup of a product page",
+  "main": "script.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MorganLKestner/product-page.git"
+  },
+  "keywords": [
+    "sticky-bar"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MorganLKestner/product-page/issues"
+  },
+  "homepage": "https://github.com/MorganLKestner/product-page#readme"
+}

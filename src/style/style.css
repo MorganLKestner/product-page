@@ -1,6 +1,14 @@
 @font-face { font-family: Graphik; src: url('Graphik-Medium.oft');
   src: url('Graphik-Medium.woff'), url('Graphik-Medium.ttf');
  } 
+
+ /* ---Notes---
+  In the start, I used borders to have a visual of all the html elements on the page.
+  Decided to use flexbox for a responsive layout.
+  Using font awesome for icons.
+ */
+
+ /* general styling. */
 body {
   border: 1px solid pink;
   margin: 10px;
@@ -15,6 +23,7 @@ a {
   color: #000000;
 
 }
+/* product container */
 .pdt-display {
  background-color:  #F8F8F8;
  width: 100%;
@@ -24,14 +33,7 @@ a {
  border: royalblue;
 
 }
-.pdt-description {
- font-size: .5em;
- flex-grow: 0;
- width: 50%; 
- border: 1px solid saddlebrown;
- position: sticky;
- /* position: fixed; */
-}
+
 .pdt-images {
   width: 40%;
   border: 1px solid #000000;
@@ -42,15 +44,47 @@ a {
   object-fit: contain;
   width: 400px;
 }
-.opt-color {
-  border: .5px solid #000000;
-}
+
 
 .image-display {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+/* sidebar left product description */
+
+.pdt-description {
+ font-size: .5em;
+ flex-grow: 0;
+ width: 50%; 
+ border: 1px solid saddlebrown;
+ position: sticky;
+ /* position: fixed; */
+}
+
+
+/* form right sidebar */
+
+.pdt-add {
+  display: flex;
+}
+.qty-container {
+  display: flex;
+  align-content: center;
+}
+.qty-btn {
+  box-sizing: border-box;
+  border: .5px solid #000000;
+  width: 20%;
+ 
+}
+.opt-color {
+  border: .5px solid #000000;
+}
+
+
+
+/* multiple images to other products */
 .row {
   width: 70%;
   height: 100%;
@@ -78,3 +112,4 @@ a {
 .mult-img-text {
   font-size: .45em;
 }
+
