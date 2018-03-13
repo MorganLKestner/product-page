@@ -6,6 +6,14 @@ body {
   margin: 10px;
   font-size: 20px;
   font-family: "Graphik",Helvetica,Arial;
+  letter-spacing: 1px;
+  line-height: .75em;
+  color: #000000;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+
 }
 .pdt-display {
  background-color:  #F8F8F8;
@@ -13,13 +21,35 @@ body {
  display: flex;
  justify-content: center;
  flex-direction: row;
- 
+ border: royalblue;
 
 }
 .pdt-description {
  font-size: .5em;
  flex-grow: 0;
- width: 30%; 
+ width: 50%; 
+ border: 1px solid saddlebrown;
+ position: sticky;
+ /* position: fixed; */
+}
+.pdt-images {
+  width: 40%;
+  border: 1px solid #000000;
+  
+
+}
+.pdt-img {
+  object-fit: contain;
+  width: 400px;
+}
+.opt-color {
+  border: .5px solid #000000;
+}
+
+.image-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .row {
   width: 70%;
@@ -31,15 +61,20 @@ body {
   align-content: flex-end;
   align-items: center;
   margin: 20px;
+  border: 1px solid green;
 
 }
 
 .mult-img {
-  padding: 20px;
+  padding: 20px 20px 0px 20px;
   flex-grow: 0;
   flex-shrink: 0;
   flex-basis: 0;
-  object-fit: scale-down;
+  object-fit: contain;
   width: 400px;
   height: 400px;
+}
+
+.mult-img-text {
+  font-size: .45em;
 }

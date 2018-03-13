@@ -18,33 +18,55 @@
         </span>
       </aside>
       <article class="pdt-images">
-        <img src="../src/style/images/highwaist_black_front_1024x1024.jpg" alt="">
+        <!-- left alt attribute blank so screen readers know to skip the image -->
+        <img class="pdt-img" src="../src/style/images/highwaist_black_front_1024x1024.jpg" alt="">
         
-        <img src="../src/style/images/highwaist_black_front_2_1024x1024.jpg" alt="">
+        <img class="pdt-img" src="../src/style/images/highwaist_black_front_2_1024x1024.jpg" alt="">
 
-        <img src="../src/style/images/highwaist_black_front_3_1024x1024.jpg" alt="">
+        <img class="pdt-img" src="../src/style/images/highwaist_black_front_3_1024x1024.jpg" alt="">
 
-        <img src="../src/style/images/highwaist_black_front_4_1024x1024.jpg" alt="">
+        <img class="pdt-img" src="../src/style/images/highwaist_black_front_4_1024x1024.jpg" alt="">
 
-        <img src="../src/style/images/highwaist_black_side_1024x1024.jpg" alt="">
+        <img class="pdt-img" src="../src/style/images/highwaist_black_side_1024x1024.jpg" alt="">
         
-        <img src="../src/style/images/highwaist_black_back_1024x1024.jpg" alt="">
+        <img class="pdt-img" src="../src/style/images/highwaist_black_back_1024x1024.jpg" alt="">
       </article>
-      <aside class="pdt-selection">
-
+      <aside class="pdt-description">
+        <form class="pdt-add" >
+          <div class="pdt-price">$35.00</div>
+          <!-- quantity goes here -->
+          <div class="color-options">
+            <label class="opt-color" for="color">color<span>*</span></label>
+            <label class="opt-color" for="black">black<span>*</span></label>
+            <label class="opt-color" for="beige">beige<span>*</span></label>
+          </div>
+          <select name="" id="size-selector">
+              <option>size</option>
+            <option value="XS">XS</option>
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <a class="sz-chart-modal" href="#">what's my size?</a>
+          <button class="add-cart" type="submit">add to bag</button>
+          <p class="bundle-content">Buy a Cycle Set and save</p>
+                  <!-- dropdown for the buy n save  -->
+        </form>
       </aside>
     </section>
     <section class="image-display">
       <article class="row">
-        <img class="mult-img" src="../src/style/images/thinx_productpage_-03.jpg" alt="">
-        <img class="mult-img" src="../src/style/images/thinx_productpage_-04.jpg" alt="">
+        <a href="#" target="_blank"><img class="mult-img" src="../src/style/images/thinx_productpage_-04.jpg" alt=""><p class="mult-img-text">Shop Hiphugger <br> heavy days</p></a>
+        <a href="#" target="_blank"><img class="mult-img" src="../src/style/images/thinx_productpage_-03.jpg" alt=""> <p class="mult-img-text">Shop Cheeky <br> light days</p></a>
       </article>
       <article class="row">
-        <img class="mult-img" src="../src/style/images/thinx_productpage_-05.jpg" alt=""> 
+          <a href="#" target="_blank"><img class="mult-img" src="../src/style/images/thinx_productpage_-05.jpg" alt=""> <p class="mult-img-text">Shop Thong <br>lightest days</p></a>
       </article>
       <article class="row">
-        <img class="mult-img" src="../src/style/images/thinx_productpage_-07.jpg" alt="">
-        <img class="mult-img" src="../src/style/images/thinx_productpage_-08.jpg" alt="">
+          <a href="#" target="_blank"><img class="mult-img" src="../src/style/images/thinx_productpage_-07.jpg" alt=""><p class="mult-img-text">Shop Sport <br> medium days</p></a>
+          <a href="#" target="_blank"><img class="mult-img" src="../src/style/images/thinx_productpage_-08.jpg" alt=""><p class="mult-img-text">Shop Boyshort <br> heavy days</p></a>
       </article>
     </section>
   </main>
