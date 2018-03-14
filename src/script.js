@@ -1,13 +1,14 @@
 // check for connection
 console.log("script is running!!");
 
-// stickybar js plug in 
 
-// // let sidebar = new StickySidebar('.sidebar', {topSpacing: 20});
+//  puesdo 
 
-// var stickySidebar = new StickySidebar('.sidebar', {
-//     topSpacing: 20,
-//     bottomSpacing: 20,
-//     containerSelector: '.pdt-container',
-//     innerWrapperSelector: '.sidebar__inner'
-// });
+//color choice - check appears on the right - default color is black
+
+//When user clicks on a color the check mark will move to that color
+
+//if the user clicks a color that isn't the previous color with the checkmark
+
+// then the previous color has the checkmark removed and the check mark is applied to a new color
+
