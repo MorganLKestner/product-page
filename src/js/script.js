@@ -1,6 +1,3 @@
-// check for connection
-console.log("script is running!!");
-
 //  puesdo
 // <----- radio check ---->
 //color choice - check appears on the right - default color is black
@@ -11,10 +8,43 @@ console.log("script is running!!");
 
 // then the previous color has the checkmark removed and the check mark is applied to a new color
 
-// <----- zoom on click ---->
+const zoomImageContainer = document.querySelector('.product-zoom-images')
 
-// on click of the image that image is enlarge
+document.querySelectorAll('.product-img').forEach(img => {
+  img.addEventListener('click', event => {
+    zoomImageContainer.classList.remove('hide-show-zoom')
 
-// the click zooms onto the image user is viewing
+    const productNumber = event.target.dataset.image
+    const currentZoomClass = 'zoom-img-' + productNumber
+    const currentZoomElement = document.querySelector('.' + currentZoomClass)
+    currentZoomElement.scrollIntoView()
+  })
+})
 
-// on click of the zoomed image that image is back to default state
+zoomImageContainer.addEventListener('click', () => {
+  zoomImageContainer.classList.add('hide-show-zoom')
+})
+
+let quantity = 1
+
+const updateQuantity = () => {
+  document.querySelector('.qty').innerText = 'quantity (' + quantity + ')'
+}
+
+document.querySelector('.add-to').addEventListener('click', () => {
+  if (quantity < 15) {
+    quantity++
+  }
+  updateQuantity()
+})
+
+document.querySelector('.subtract').addEventListener('click', () => {
+  if (quantity > 1) {
+    quantity--
+  }
+  updateQuantity()
+})
+
+$('.carousel').carousel({
+  interval: false
+})
