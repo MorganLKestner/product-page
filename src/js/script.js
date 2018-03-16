@@ -1,8 +1,7 @@
 // check for connection
 console.log("script is running!!");
 
-
-//  puesdo 
+//  puesdo
 // <----- radio check ---->
 //color choice - check appears on the right - default color is black
 
@@ -12,10 +11,6 @@ console.log("script is running!!");
 
 // then the previous color has the checkmark removed and the check mark is applied to a new color
 
-
-
-
-
 // <----- zoom on click ---->
 
 // on click of the image that image is enlarge
@@ -23,4 +18,3 @@ console.log("script is running!!");
 // the click zooms onto the image user is viewing
 
 // on click of the zoomed image that image is back to default state
-
