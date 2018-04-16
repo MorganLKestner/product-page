@@ -215,26 +215,26 @@ a {
   flex-direction: column;
   align-items: center;
   z-index: 100;
+  display: none;
   width: 100vw;
   position: absolute;
   background-color: #f8f8f8;
   cursor: url(http://res.cloudinary.com/ssenseweb/image/upload/v1422559505/web/zoom-out-16x16.png),
     pointer;
 }
-.hide-show-zoom {
+.hide-show-zoom, .carousel {
   display: none;
 }
-
-.carousel {
-  display: none;
+.carousel-indicators {
+  top: 40em;
 }
-
 .carousel-indicators li {
   border: 1px solid #333;
 }
 
 .carousel-indicators .active {
   background-color: #333;
+
 }
 
 .carousel img {
